@@ -11,6 +11,7 @@ class MainPresenter: ObservableObject {
 
     @Published var rows:[CellViewPresneter] = []
     func append(sectionTitle: String, arrayValue: String, dictValue: String) {
+        
         rows.append(CellViewPresneter(title: sectionTitle, arrayValue: arrayValue, dictValue: dictValue))
     }
 }
